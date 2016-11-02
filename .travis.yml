@@ -21,3 +21,5 @@ matrix:
         - XCODE_ACTION=test
         - XCODE_SDK=iphonesimulator
         - XCODE_DESTINATION="name=iPhone 6s"
+after_success:
+- bash <(curl -s https://codecov.io/bash)
